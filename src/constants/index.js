@@ -23,6 +23,8 @@ import {
   jobit,
   tripguide,
   threejs,
+  silk,
+  simulator,
 } from "../assets";
 
 export const navLinks = [
@@ -54,7 +56,7 @@ const services = [
     icon: backend,
   },
   {
-    title: "Content Creator",
+    title: "Game Developer",
     icon: creator,
   },
 ];
@@ -116,37 +118,36 @@ const technologies = [
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
+    title: "Practical projects",
+    company_name: "",
     icon: starbucks,
     iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    date: "March 2019 - April 2021",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Simultaneously with my university studies, I embarked on my initial project ventures",
+      "I developed my very first program entirely from scratch.",
+      "I gained valuable insights into real-world projects and the challenges they entail.",
+      "Through my project work, I acquired proficiency in object-oriented coding",
     ],
   },
   {
-    title: "React Native Developer",
-    company_name: "Tesla",
+    title: "Freelancer",
+    company_name: "Upwork",
     icon: tesla,
     iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
+    date: "June 2021 - Feb 2022",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "I embarked on my initial real projects, predominantly centered around web development",
+      "I extensively studied React and React Native, gaining substantial experience in TypeScript",
+      "I've successfully completed numerous small and medium-sized web projects, leaving clients satisfied.",
     ],
   },
   {
-    title: "Web Developer",
-    company_name: "Shopify",
+    title: "Javascript Developer",
+    company_name: "San Soft Ltd",
     icon: shopify,
     iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
+    date: "Jan 2022 - Feb 2023",
     points: [
       "Developing and maintaining web applications using React.js and other related technologies.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
@@ -155,16 +156,16 @@ const experiences = [
     ],
   },
   {
-    title: "Full stack Developer",
-    company_name: "Meta",
+    title: "Software Engineer",
+    company_name: "Silk Road Gaming",
     icon: meta,
     iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
+    date: "Feb 2023 - Present",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Designed and implemented user registration, login, and authentication functionalities using" +
+        "Node.js,React and MongoDB",
+      "Enhanced application security by conducting thorough code reviews and implementing best practices",
+      "Improved game performance by optimizing database queries and introducing efficient data structures",
     ],
   },
 ];
@@ -198,9 +199,9 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "La Petite Alice",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Captivated by the vibrant realm of creativity, I collaborated with Ine Agresta, an accomplished artist, designer, and visionary hailing from Uruguay, now thriving in Denmark ",
     tags: [
       {
         name: "react",
@@ -214,14 +215,22 @@ const projects = [
         name: "tailwind",
         color: "pink-text-gradient",
       },
+      {
+        name: "Node.js,",
+        color: "green-text-gradient",
+      },
+      {
+        name: "TypeScript",
+        color: "blue-text-gradient",
+      },
     ],
     image: carrent,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://lapetitealice.com/",
   },
   {
-    name: "Job IT",
+    name: "Artist – Ine Agresta",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "Captivated by the vibrant realm of creativity, I collaborated with Ine Agresta, an accomplished artist, designer, and visionary hailing from Uruguay, now thriving in Denmark. Equipped with a formal education in fashion and textile design, Ine's artistry extends across diverse mediums, adorned with daring hues, and woven with her life's narrative",
     tags: [
       {
         name: "react",
@@ -235,14 +244,22 @@ const projects = [
         name: "scss",
         color: "pink-text-gradient",
       },
+      {
+        name: "Redux",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Express.js",
+        color: "pink-text-gradient",
+      },
     ],
     image: jobit,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://ineagresta.com/",
   },
   {
-    name: "Trip Guide",
+    name: "YouTube Clone",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      " I engineered a YouTube clone website that mirrors the familiar platform's essence while infusing it with my own creative touch.",
     tags: [
       {
         name: "nextjs",
@@ -253,12 +270,82 @@ const projects = [
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "Sass",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Firebase",
         color: "pink-text-gradient",
       },
     ],
     image: tripguide,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://youtube-clone-omega-self.vercel.app/",
+  },
+  {
+    name: "Silk Road Gaming",
+    description:
+      "Venturing into the realm of immersive online gaming experiences, I proudly present the Silk Road Gaming website—a dynamic platform that seamlessly marries my expertise in browser game development with cutting-edge web technologies. With a portfolio brimming with HTML5 games powered by Phaser and Three.js",
+    tags: [
+      {
+        name: "javascrit",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "typescript",
+        color: "green-text-gradient",
+      },
+      {
+        name: "React",
+        color: "green-text-gradient",
+      },
+      {
+        name: "material UI",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Node JS",
+        color: "green-text-gradient",
+      },
+      {
+        name: "MySQL",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Phaser",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Three JS",
+        color: "green-text-gradient",
+      },
+    ],
+    image: silk,
+    source_code_link: "https://silk-road-gaming-3g2l.vercel.app/",
+  },
+  {
+    name: "Football Simulator",
+    description:
+      "Crafted with the might of React, Phaser, and a relentless thirst for knowledge, this project is a testament to my unwavering commitment to advancing my expertise in JavaScript & TypeScript.",
+    tags: [
+      {
+        name: "javascrit",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "typescript",
+        color: "green-text-gradient",
+      },
+      {
+        name: "React",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Phaser",
+        color: "green-text-gradient",
+      },
+    ],
+    image: simulator,
+    source_code_link: "https://digital-dribblers-ngci.vercel.app/game",
   },
 ];
 
